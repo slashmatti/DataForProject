@@ -51,7 +51,7 @@ maxCels <- max(data$Max) + 0.05 * max(data$Max)
 minCels <- min(data$Min) - 0.05 * min(data$Min)
 
 plot(data$Date, data$Min, type = "l", col = "blue", ylim = c(minCels, maxCels),
-    main = "Temperatures registered in Rosario during 2014", xlab = "Date", ylab = "Temperature (°C)")
+    main = "Temperatures registered in Rosario during 2014", xlab = "Date", ylab = "Temperature (Â°C)")
     lines(data$Date, data$Mean, type = "l", col = "orange")
     lines(data$Date, data$Max, type = "l", col = "red")
     abline(v = as.Date("2014-09-23"), lwd = 2, col = "green")
